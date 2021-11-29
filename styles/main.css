@@ -1,0 +1,293 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 6 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.box {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; */
+  /* transition: all 0.5s linear 0.5s; */
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /* .box:hover {
+    width: 800px;
+    background-color: brown;
+    color: #fff;
+  } */
+  z-index: 50;
+}
+
+.box1 {
+  position: absolute;
+  -webkit-animation-name: anim;
+  animation-name: anim;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  z-index: 20;
+}
+.box2 {
+  position: absolute;
+  -webkit-animation-name: anim2;
+  animation-name: anim2;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  z-index: 30;
+}
+.box3 {
+  position: absolute;
+  -webkit-animation-name: anim3;
+  animation-name: anim3;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  z-index: 40;
+}
+@-webkit-keyframes move {
+  0% {
+    top: 50px;
+    left: 50px;
+    background-image: url("../images/everyone_mobile.png");
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  30% {
+    top: 250px;
+    left: 250px;
+    background-image: url("https://picsum.photos/200/300/?blur");
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+  50% {
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+  }
+  70% {
+    background-image: url("https://picsum.photos/id/870/200/300?grayscale&blur=2");
+  }
+  100% {
+    top: 550px;
+    left: 650px;
+    background-image: url("https://picsum.photos/200/300?grayscale");
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    border-radius: 0;
+  }
+  /* 70% {
+
+  }
+  50% {
+
+  }
+  30% {
+
+  } */
+}
+@keyframes move {
+  0% {
+    top: 50px;
+    left: 50px;
+    background-image: url("../images/everyone_mobile.png");
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  30% {
+    top: 250px;
+    left: 250px;
+    background-image: url("https://picsum.photos/200/300/?blur");
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+  50% {
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+  }
+  70% {
+    background-image: url("https://picsum.photos/id/870/200/300?grayscale&blur=2");
+  }
+  100% {
+    top: 550px;
+    left: 1650px;
+    background-image: url("https://picsum.photos/200/300?grayscale");
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    border-radius: 0;
+  }
+}
+@-webkit-keyframes anim {
+  0% {
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 350px;
+    right: 450px;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+}
+@keyframes anim {
+  0% {
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 350px;
+    right: 450px;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+}
+@-webkit-keyframes anim2 {
+  0% {
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    top: 350px;
+    right: 450px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(25, 126, 38);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+}
+@keyframes anim2 {
+  0% {
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    top: 350px;
+    right: 450px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(25, 126, 38);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+}
+@-webkit-keyframes anim3 {
+  0% {
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 350px;
+    left: 450px;
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+}
+@keyframes anim3 {
+  0% {
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 350px;
+    left: 450px;
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 50%;
+  }
+}
